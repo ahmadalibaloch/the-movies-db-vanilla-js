@@ -14,6 +14,5 @@ export const moviesAPI = {
     }
 }
 
-export const authorization_token = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJjNzkwNjdlZDJmNjZkNDM1Mjg2Yjg1MzRiYTlkN2UwOSIsInN1YiI6IjVlNjUyOTEyMzU3YzAwMDAxMTM3ZjZlNyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.FA_HMYi2WKfMZBs1HEHx2vE98K-3jdMqQ3TxFUZR1gE";
-export const api_key = "c79067ed2f66d435286b8534ba9d7e09";
+export const api_key = "";
 export const appendApiKey = url => `${url}&language=en-US&api_key=${api_key}`;
