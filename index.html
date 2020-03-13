@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Game Analytics</title>
+    <link rel="stylesheet" href="./main.css" />
+    <script type="module" src="index.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="assets/tmdb.svg" width="81" height="72" />
+    </header>
+    <content>
+        <div class="search">
+            <span>The Movies DB</span>
+            <span class="search-title">Find any movie</span>
+            <div class="search-input-wrapper">
+                <input type="text" id="searchField" />
+                <img class="search-icon" src="assets/search.svg" width="36" height="36" />
+            </div>
+        </div>
+        <div class="status-bar">
+            <div>
+                <div class="results-label">All Movies</div>
+                <div class="results-description">Showing 6 of total of 6 movies</div>
+            </div>
+            <div class="controls">
+                <select class="custom-select select-sort">
+                    <option value="vote_average.asc">No Sorting</option>
+                    <option value="vote_average.desc">Sort by Vote</option>
+                </select>
+                <select class="custom-select select-filter">
+                    <option value='all'>All Movies</option>
+                    <option value='new'>New Movies</option>
+                    <option value='fav'>Favorite</option>
+                </select>
+            </div>
+        </div>
+        <div class="separator-horizontal"></div>
+        <div class="movies-list">
+
+        </div>
+    </content>
+    <template>
+        <div class="movie">
+            <img class="thumbnail" />
+            <div class="details">
+                <div class="content">
+                    <div class="name-year-wrapper">
+                        <div class="name">Ad Astra</div>
+                        <div class="year">(2009)</div>
+                    </div>
+                    <div class="description">sdfsdfsd fsdf sfsd fsdfsd asdasd ajslkfdjsldkf jdasklfjda sfklaj
+                        klajf klj lkdsafjslkf jsdlkf.s fdklj
+                        dslkfdsj flksdfj klsdfj sdlkf jsdlfksdjfklsdfsd.fd.s fsd.fsdf jsdlkfj sdfdjf lsdfsd.
+                        fsdfk
+                        sjdf.sfj s.fkj sdsd fs....</div>
+                </div>
+                <div class="separator-vertical"></div>
+                <div class="controls">
+                    <div class="btn-favorite">
+                        <img class="fav-icon" src="assets/favorite-border.svg" width="24" height="24" />
+                    </div>
+                    <div class="btn-info"> More info</div>
+                </div>
+            </div>
+        </div>
+    </template>
+</body>
+
+</html>
